@@ -1,0 +1,37 @@
+
+
+
+<!-- Write code to get 1st H1 element from a webpage using DOM -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>hello cetpa</h1>
+    <h1>Namskaar</h1>
+
+
+    
+    <script>
+    
+    const firstH1 = document.querySelector('h1');
+
+if (firstH1) {
+    console.log("First H1 Element:", firstH1);
+    console.log("Text Content:", firstH1.textContent); 
+} else {
+    console.log("No <h1> elements found on this page.");
+}
+
+    </script>
+
+</body>
+</html>

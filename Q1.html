@@ -1,0 +1,28 @@
+<!--  Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Heading</title>
+  </head>
+  <body>
+    <div id="container">
+      <button id="addHeadingButton">Click here to Add Heading</button>
+    </div>
+
+
+    
+
+    <script>
+      const button = document.getElementById("addHeadingButton");
+      const container = document.getElementById("container");
+      button.addEventListener("click", () => {
+        const newHeading = document.createElement("h1");
+        newHeading.textContent = "MERN stack";
+        container.insertBefore(newHeading, button);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!-- Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer Clock</title>
+  </head>
+
+  <body>
+    <div id="clock" style="font-size: x-large"></div>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+
+        const hours = String(now.getHours());
+        const minutes = String(now.getMinutes());
+        const seconds = String(now.getSeconds());
+
+        const timeString = `${hours}:${minutes}:${seconds}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      setInterval(updateClock, 1000);
+
+      updateClock();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+
+
+<!--  Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy" -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Text</title>
+    
+</head>
+<body>
+
+    <div id="content">Hello world</div>
+    <button id="replaceButton">click</button>
+
+    <script>
+       
+        const button = document.getElementById('replaceButton');
+
+        button.addEventListener('click', () => {
+            document.getElementById('content').textContent = 'Welcome to Elevation academy';
+        });
+
+    </script>
+
+</body>
+</html>
